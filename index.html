@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" mediaf="all" />
+    <title>Starbucks Website Landing Page</title>
+  </head>
+  <body>
+    <section>
+      <div class="circle">
+        
+      </div>
+      <header>
+        <a href="#"><img src="logo.png" alt="" class="logo"/></a>
+        <div class="toggle" onclick="toggleMenu();">
+       </div>
+        <ul class="navigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2>It's not just Coffee<br />It's <span>Starbucks</span></h2>
+          <p>22 Mei 2021
+          Sore hari awan disinari sinar dari
+          matahari yang sangat jingga
+          Di suatu masjid, masjid agung, ada
+          seorang yang sangat sekali
+          semangat untuk melakukan biasanya
+          di masjid, padahal ia seorang yang
+          mempunyai keterbatasan.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="imgBox">
+          <img class="starbucks" src="img1.png" alt="" />
+        </div>
+      </div>
+      <ul class="thumb">
+        <li><img src="thumb1.png" alt="" onclick="imgSlider('img1.png');changeCircleColor('#017143')"/></li>
+        <li><img src="thumb2.png" alt="" onclick="imgSlider('img2.png');changeCircleColor('#eb7495')"/></li>
+        <li><img src="thumb3.png" alt="" onclick="imgSlider('img3.png');changeCircleColor('#d752bb')"/></li>
+      </ul>
+      <ul class="sci">
+        <li><a href="#"><img src="facebook.png" alt="" /></a></li>
+        <li><a href="#"><img src="twitter.png" alt="" /></a></li>
+        <li><a href="#"><img src="instagram.png" alt="" /></a></li>
+      </ul>
+    </section>
+    <script type="text/javascript" charset="utf-8">
+      function imgSlider(anything){
+        document.querySelector('.starbucks').src = anything;
+      }
+      function changeCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+      }
+      function toggleMenu(){
+        var menuToggle = document.querySelector('.toggle');
+        var navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active')
+        navigation.classList.toggle('active')
+      }
+    </script>
+  </body>
+</html>

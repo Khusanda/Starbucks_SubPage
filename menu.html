@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style_menu.css" type="text/css" media="all" />
+  <title>Starbucks Website Menu</title>
+</head>
+<body>
+  <section>
+    <header>
+      <a href="#"><img src="logo.png" alt="" class="logo" /></a>
+      <div class="toggle" onclick="toggleMenu();">
+      </div>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="#">What's New</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="judul">
+        <h2>Starbucks!<br /> What's <span>Menu?</span></h2>
+      </div>
+      <div class="menu">
+        <h2>Drinks</h2>
+        <ul>
+          <li><h3>Drink 1</h3><img src="drink1.jpg" alt="" /></li>
+          <li><h3>Drink 2</h3><img src="drink2.jpg" alt="" /></li>
+          <li><h3>Drink 3</h3><img src="drink3.jpg" alt="" /></li>
+        </ul>
+        <h2>Foods</h2>
+        <ul>
+          <li><h3>Food 1</h3><img src="food1.jpg" alt="" /></li>
+          <li><h3>Food 2</h3><img src="food2.jpg" alt="" /></li>
+          <li><h3>Food 3</h3><img src="food5.jpg" alt="" /></li>
+        </ul>
+      </div>
+    </div>
+    <!-- <ul class="sci">
+          <li><a href="#"><img src="facebook.png" alt="" /></a></li>
+          <li><a href="#"><img src="twitter.png" alt="" /></a></li>
+          <li><a href="#"><img src="instagram.png" alt="" /></a></li>
+        </ul> -->
+  <!-- <div class="footer">
+      <ul class="sci">
+        <li><a href="#"><img src="facebook.png" alt="" /></a></li>
+        <li><a href="#"><img src="twitter.png" alt="" /></a></li>
+        <li><a href="#"><img src="instagram.png" alt="" /></a></li>
+      </ul>
+    </div> -->
+  </section>
+  <script type="text/javascript" charset="utf-8">
+    function toggleMenu() {
+      var menuToggle = document.querySelector('.toggle');
+      var navigation = document.querySelector('.navigation');
+      menuToggle.classList.toggle('active')
+      navigation.classList.toggle('active')
+    }
+  </script>
+</body>
+</html>
